@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Encuesta sobre Star Wars: The Clone Wars</title>
+    <style>
+     h1 {
+        font-size: 50px;
+        letter-spacing: -2px;
+        color: #fff;
+        text-shadow: 0 0 2px #2e2c2c, 0 0 2px #3b3636, 0 0 2px #aa9d24, 0 0 5px #bebc45, 0 0 5px #c9c61b;
+        -webkit-text-fill-color: #e0e495;
+       -webkit-text-stroke-color: #e2df40;
+        -webkit-text-stroke-width: 0.2px;
+       }
+
+      form {
+        margin: 30px;
+        padding: 20px;
+        border: 2px solid #2b2d42;
+        border-radius: 5px;
+        background-color: #edf2f4;
+        width: 500px;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #2b2d42;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0;
+        color: #2b2d42;
+      }
+
+      input[type=submit] {
+        background-color: #999345;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      a {
+        background-color: #999345;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      form:focus-within {
+        border-color: #ccd456;
+      }
+
+      form input:focus {
+        border: 2px solid rgba(251, 255, 0, 0.705);
+      }
+
+      section {
+        display: flex;
+        align-items: center;
+				top: 250;
+				left:500;
+				bottom: 0;
+				right: 520;
+
+       }
+
+       section img {
+         width: 200px;
+         margin: 5px;
+         object-fit: cover;
+         opacity: .8;
+         transition: .5s ease;
+        }
+
+        section img:hover {
+          cursor: url(http://www.rw-designer.com/cursor-extern.php?id=62648), auto;
+          width: 300px;
+          opacity: 1;
+          filter: contrast(120%);
+        }
+    </style>
+   </head>
+  <body>
+      <h1>Encuesta de Star Wars: Clone Wars</h1>
+    <form action="https://iesjacaranda.es/lmsgi/resultado.php" method="post">
+      <fieldset>
+        <legend>¿Cuál es tu personaje favorito de Star Wars: Clone Wars?</legend>
+        <input type="radio" id="ahsoka" name="personaje" value="ahsoka">
+        <label for="ahsoka">Ahsoka Tano</label><br>
+        <input type="radio" id="rex" name="personaje" value="rex">
+        <label for="rex">Capitán Rex</label><br>
+        <input type="radio" id="obiwan" name="personaje" value="obiwan">
+        <label for="obiwan">Obi-Wan Kenobi</label><br>
+        <input type="radio" id="anakin" name="personaje" value="anakin">
+        <label for="anakin">Anakin Skywalker</label><br>
+        <input type="radio" id="yoda" name="personaje" value="yoda">
+        <label for="yoda">Yoda</label>
+      </fieldset>
+      <fieldset>
+        <legend>¿Cuál es tu episodio favorito de Star Wars: Clone Wars?</legend>
+        <input type="radio" id="ep1" name="episodio" value="ep1">
+        <label for="ep1">La Batalla de Christophsis</label><br>
+        <input type="radio" id="ep2" name="episodio" value="ep2">
+        <label for="ep2">La Caza de Ziro</label><br>
+        <input type="radio" id="ep3" name="episodio" value="ep3">
+        <label for="ep3">El Desafío Jedi</label><br>
+        <input type="radio" id="ep4" name="episodio" value="ep4">
+        <label for="ep4">La Ciudadela</label><br>
+        <input type="radio" id="ep5" name="episodio" value="ep5">
+        <label for="ep5">El Camino del Jedi</label>
+      </fieldset>
+      <fieldset>
+        <legend>¿Qué opinas de la serie en general?</legend>
+        <textarea id="opinion" name="opinion" rows="4" cols="50"></textarea>
+      </fieldset>
+      <input type="submit" value="Enviar">
+      <a href="index.html">
+        <input type="button" value="Atras">
+      </a>
+    </form>
+    <section class="image-section">
+      <table>
+        <tr>
+          <td><img src="1b718b802b0a8a18aa552e8fc5cc71fca2df6c07r1-1043-1146v2_hq.jpg"></td>
+          <td><img src="46ea44aa50aab8d5cbacc5096df7255c.jpg"></td>
+          <td><img src="CloneCaptainRex.png"></td>
+        </tr>
+        <tr>
+          <td><img src="a51d53a2f4bad4096c521acfbe3552b2.jpg"></td>
+          <td><img src="star-wars-clone-wars-season-6-finale.jpg"></td>
+          <td><img src="wp10762259.jpg"></td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
